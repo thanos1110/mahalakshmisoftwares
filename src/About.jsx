@@ -12,7 +12,7 @@ function About() {
 
         <p>Full Setup is Offline, and only Requires Internet when required Support or when company owner require access. </p>
 
-        <p>Our Billing Application Provides Realtime Data on the Shop Owners Phone via  Sonic Owner Application. [Requires internet Access]</p>
+        <p>Our Billing Application Provides Realtime Data on the Business Owners Phone via  Sonic Owner Application. [Requires internet Access]</p>
       </div>
     </div>
   )

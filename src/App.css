@@ -13,38 +13,39 @@
 
 /* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: center; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-    background-color: #fff; /* Dark background color */
-    padding: 10px 20px; /* Padding for spacing */
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Remove default margin */
-    height: 10vh;
-  }
-  
-  .navbar li {
-    margin: 0 15px; /* Spacing between items */
-  }
-  
-  .navlink {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* White text color */
-    font-size: 1rem; /* Adjust font size */
-    font-weight: 500; /* Semi-bold font */
-    transition: color 0.3s ease; /* Smooth color transition */
-  }
-  
-  .navlink:hover {
-    color: #ff5722; /* Highlight color on hover */
-  }
-  
-  .navlink:active {
-    color: #ff9800; /* Color on click */
-  }
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  background-color: #fff; /* Dark background color */
+  padding: 10px 20px; /* Padding for spacing */
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  height: 10vh;
+}
+
+.navbar li {
+  margin: 0 15px; /* Spacing between items */
+}
+
+.navlink {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* White text color */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 500; /* Semi-bold font */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navlink:hover {
+  color: #ff5722; /* Highlight color on hover */
+}
+
+.navlink:active {
+  color: #ff9800; /* Color on click */
+}
+
 .BrandLogo{
-  margin: 10px;
-  padding: 10px;
+margin: 10px;
+padding: 10px;
 }
 .btn-home{
   background-color: #2036cd;
@@ -125,3 +126,52 @@
       margin: 10px 0; /* Adjust spacing for stacked items */
     }
   }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    max-height: 0; /* Collapsed by default */
+    overflow: hidden; /* Hide overflowing items */
+    transition: max-height 0.3s ease-in-out; /* Smooth collapse/expand */
+  }
+
+  .navbar.open {
+    margin-top: 10vh;
+    max-height: 900px; /* Adjust this value to fit all menu items */
+    overflow: visible;  
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Add spacing between stacked items */
+    width: 100%; /* Full width for each item */
+    text-align: center; /* Center the text */
+  }
+
+  .navlink {
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    padding: 10px 0; /* Add padding for touch-friendly links */
+  }
+
+  .toggle-button {
+    display: block; /* Show toggle button */
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Large button for mobile */
+    cursor: pointer;
+    margin-left: auto; /* Align to the right */
+    padding: 10px;
+  }
+
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Background for header */
+  }
+
+  .logo {
+    margin-top: 5px;
+    height: 50px; /* Adjust logo size for mobile */
+  }
+}
