@@ -1,0 +1,127 @@
+/* app / home navbar about */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    background-color: #fff; /* Dark background color */
+    padding: 10px 20px; /* Padding for spacing */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    height: 10vh;
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Spacing between items */
+  }
+  
+  .navlink {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* White text color */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Semi-bold font */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navlink:hover {
+    color: #ff5722; /* Highlight color on hover */
+  }
+  
+  .navlink:active {
+    color: #ff9800; /* Color on click */
+  }
+.BrandLogo{
+  margin: 10px;
+  padding: 10px;
+}
+.btn-home{
+  background-color: #2036cd;
+  color: white;
+  border: none;
+  padding: 10px 50PX;
+  border-radius: 25px;
+  margin: 10px; 
+}
+#left-right-parent{
+  display: flex;
+  height: 80vh;
+}
+
+#left{
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  
+}
+#right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+.about {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+}
+
+.bg-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-para-div {
+  position: absolute;
+  top: 60%; /* Adjusted to center vertically within the image */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally */
+  width: 40%; /* Reduced width for a more compact layout */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for better readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  text-align: center; /* Center the text within the box */
+}
+
+.about-para-div h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-para-div p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+
+
+
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .navbar li {
+      margin: 10px 0; /* Adjust spacing for stacked items */
+    }
+  }
