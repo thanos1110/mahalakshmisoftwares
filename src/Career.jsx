@@ -3,7 +3,7 @@ import React from 'react'
 function Career() {
   return (
     <div className='career-div'>
-      <h2>Please send your resume at <a href="mailto:mahalakshmisoftwares1@gmail.com">mahalakshmisoftwares1@gmail.com</a></h2>
+      <p>Please send your resume at </p><p><a href="mailto:mahalakshmisoftwares1@gmail.com">mahalakshmisoftwares1@gmail.com</a></p>
     </div>
   )
 }
