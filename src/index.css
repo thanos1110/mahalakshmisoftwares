@@ -112,3 +112,12 @@
 .contact-heading{
     color: #2036cd  ;
 }
+
+@media (max-width: 768px) {
+    .fea-img{
+        width: 100px;
+    }
+    .img-div{
+        margin-top: 10vh;
+    }
+}

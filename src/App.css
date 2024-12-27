@@ -42,37 +42,78 @@
 .navlink:active {
   color: #ff9800; /* Color on click */
 }
-
-.BrandLogo{
-margin: 10px;
-padding: 10px;
+/* ------------navbar ok--------------- */
+/* Default Styles */
+.BrandLogo {
+  margin: 10px;
+  padding: 10px;
 }
-.btn-home{
+
+.btn-home {
   background-color: #2036cd;
   color: white;
   border: none;
-  padding: 10px 50PX;
+  padding: 10px 50px;
   border-radius: 25px;
-  margin: 10px; 
-}
-#left-right-parent{
-  display: flex;
-  height: 80vh;
+  margin: 10px;
 }
 
-#left{
+#left-right-parent {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+#left {
   display: flex;
   width: 50vw;
   justify-content: center;
   align-items: center;
-  
 }
-#right{
+
+#right {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50vw;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #left-right-parent {
+    flex-direction: column-reverse; /* Stack left and right sections vertically */
+    height: auto; /* Allow sections to adapt to content */
+    padding: 20px 10px;
+  }
+
+  #left, #right {
+    width: 100%; /* Full width on mobile */
+    text-align: center;
+  }
+
+  .BrandLogo {
+    width: 120px; /* Adjust logo size for mobile */
+    display: none; /* Hide BrandLogo on mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Slightly smaller font for mobile */
+    margin: 10px 0;
+  }
+
+  .btn-home {
+    width: 100%; /* Make buttons full width */
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  #right img {
+    width: 100%; /* Make the right image responsive */
+  }
+}
+
+
+/* -------------brand logo ------------------- */
 .about {
   position: relative;
   width: 100%;
@@ -125,7 +166,12 @@ padding: 10px;
     .navbar li {
       margin: 10px 0; /* Adjust spacing for stacked items */
     }
+    #right{
+      margin-top: 5%;
+    }
   }
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
@@ -139,6 +185,7 @@ padding: 10px;
     margin-top: 10vh;
     max-height: 900px; /* Adjust this value to fit all menu items */
     overflow: visible;  
+    margin-bottom: 10vh;
   }
 
   .navbar li {
@@ -173,5 +220,33 @@ padding: 10px;
   .logo {
     margin-top: 5px;
     height: 50px; /* Adjust logo size for mobile */
+  }
+}
+
+
+/* Default Styles - Navbar */
+.navbar-header {
+  display: none; /* Hide on desktop by default */
+}
+
+@media (max-width: 768px) {
+  /* Only show navbar header with the hamburger icon on mobile devices */
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .toggle-button {
+    font-size: 24px; /* Adjust the size of the hamburger icon */
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 120px; /* Adjust logo size on mobile */
   }
 }
