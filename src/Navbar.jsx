@@ -24,12 +24,12 @@ const Navbar = () => {
         </button>
       </div>
       <ul className={`navbar ${isOpen ? "open" : ""}`}>
-        <li><Link to="/" className="navlink" onClick={handleLinkClick}>Home</Link></li>
-        <li><Link to="/about" className="navlink" onClick={handleLinkClick}>About</Link></li>
-        <li><Link to="/career" className="navlink" onClick={handleLinkClick}>Career</Link></li>
-        <li><Link to="/products" className="navlink" onClick={handleLinkClick}>Products</Link></li>
-        <li><Link to="/features" className="navlink" onClick={handleLinkClick}>Features</Link></li>
-        <li><Link to="/contact" className="navlink" onClick={handleLinkClick}>Contact</Link></li>
+        <li className="bg-nav"><Link to="/" className="navlink" onClick={handleLinkClick}>Home</Link></li>
+        <li className="bg-nav"><Link to="/about" className="navlink" onClick={handleLinkClick}>About</Link></li>
+        <li className="bg-nav"><Link to="/career" className="navlink" onClick={handleLinkClick}>Career</Link></li>
+        <li className="bg-nav"><Link to="/products" className="navlink" onClick={handleLinkClick}>Products</Link></li>
+        <li className="bg-nav"><Link to="/features" className="navlink" onClick={handleLinkClick}>Features</Link></li>
+        <li className="bg-nav"><Link to="/contact" className="navlink" onClick={handleLinkClick}>Contact</Link></li>
       </ul>
     </nav>
   );

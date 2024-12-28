@@ -1,6 +1,17 @@
 import React from 'react'
 import BGAbout from '/BGAbout.svg'
+import  { useEffect } from 'react';
+
 function About() {
+  useEffect(() => {
+    // Disable scrolling
+    document.body.style.overflow = 'hidden';
+
+    // Cleanup: Enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
   return (
     <div className='about'>
       <div className='bg-img'>

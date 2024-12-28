@@ -123,4 +123,10 @@
     .img-div{
         margin-top: 10vh;
     }
+    .card-p{
+        width: 90vw;
+    }
+    .card-img{
+        width : 200px
+    }
 }
