@@ -11,9 +11,9 @@ function Contact() {
      <div id="right">
        <div className='contact-col'>
        <h2 className='contact-heading con-col-mem'>Contact Us Now</h2>
-       <h3 className='con-col-mem'>Phone</h3>
-       <p><a href="mailto:mahalakshmisoftwares@email.com" className='con-col-mem con-bor'>mahalakshmisoftwares@email.com</a></p>
        <h3 className='con-col-mem'>Email</h3>
+       <p><a href="mailto:mahalakshmisoftwares@email.com" className='con-col-mem con-bor'>mahalakshmisoftwares@email.com</a></p>
+       <h3 className='con-col-mem'>Phone</h3>
        <p><a href="" className='con-col-mem con-bor'>+91 7666133386</a></p>
        </div>
     </div>
