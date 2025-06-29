@@ -91,11 +91,6 @@
     text-align: center;
   }
 
-  .BrandLogo {
-    width: 120px; /* Adjust logo size for mobile */
-    display: none; /* Hide BrandLogo on mobile */
-  }
-
   h2 {
     font-size: 1.5rem; /* Slightly smaller font for mobile */
     margin: 10px 0;
@@ -112,6 +107,12 @@
   }
 }
 
+.BrandLogo {
+  width: 30vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* -------------brand logo ------------------- */
 
@@ -300,4 +301,131 @@
   .logo {
     width: 120px; /* Adjust logo size on mobile */
   }
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-6px);
+}
+
+.career-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.career-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.career-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.career-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.career-button {
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.career-button:hover {
+  background-color: #0056b3;
+}
+/* Grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Image styling */
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+/* Content */
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  min-height: 60px;
+}
+
+/* Buttons */
+.product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product-button {
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.product-button:hover {
+  background-color: #0056b3;
 }

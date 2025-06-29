@@ -12,7 +12,7 @@ function Contact() {
        <div className='contact-col'>
        <h2 className='contact-heading con-col-mem'>Contact Us Now</h2>
        <h3 className='con-col-mem'>Phone</h3>
-       <p><a href="mailto:mahalakshmisoftawres1@gmail.com" className='con-col-mem con-bor'>mahalakshmisoftawres1@gmail.com</a></p>
+       <p><a href="mailto:mahalakshmisoftwares@email.com" className='con-col-mem con-bor'>mahalakshmisoftwares@email.com</a></p>
        <h3 className='con-col-mem'>Email</h3>
        <p><a href="" className='con-col-mem con-bor'>+91 7666133386</a></p>
        </div>

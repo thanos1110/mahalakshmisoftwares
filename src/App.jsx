@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './App.css';
-import Logo from '/Mahalakshmi.svg';
+import Logo from '/MahalakshmiHotels.png';
 import HomeImg from '/HOMEPAGE.svg';
 
 function App() {
@@ -8,7 +8,9 @@ function App() {
     <div id="left-right-parent">
       <div id="left">
         <div>
-          <img src={Logo} alt="Logo" className="BrandLogo" />
+          <div id='brandLogo'>
+           <img src={Logo} alt="Logo" className="BrandLogo" />
+          </div>
           <h2 style={{ fontFamily: 'Nunito', margin: '10px 40px', color: '#2036cd' }}>
             Our Billing Products
           </h2>
